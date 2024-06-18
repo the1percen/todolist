@@ -1,0 +1,110 @@
+
+
+
+.my-body {
+    background: #352f5b;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 23px;
+  }
+  
+  .container {
+    max-width: 400px;
+  }
+  
+  input[type="text"],
+  input[type="text"]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  .todos li {
+    background: #423a6f;
+    color: #fff;
+  }
+  
+  .delete {
+    cursor: pointer;
+  }
+  
+  .filtered {
+    display: none !important;
+  }
+  
+  .btn:hover {
+    background: #423a6f;
+    color: #fff;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 13px 13px;
+    transition: 0.8s;
+  }
+  .violet-btn {
+    background-color: #9c54b3; /* Violet color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Indicate clickable element */
+    transition: background-color 0.2s ease; /* Smooth transition on hover */
+  }
+  
+  .violet-btn:hover {
+    background-color: #7f3c98; /* Darker violet on hover */
+  }
+  /* Style for the list-group class */
+.list-group {
+  /* Your styles here */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the todos class */
+
+
+/* Style for the mx-auto class */
+.mx-auto {
+  /* Your styles here */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for the text-light class */
+
+.delete {
+  /* Your styles here */
+  cursor: pointer;
+  color: #dc3545;
+}
+
+/* Combining styles for a specific element if necessary */
+.deletecontainer{
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btncontainer{
+  margin-top: 20px;
+  display: flex;
+}
+
+.btncancel, .btn-delete{
+  width: 100px;
+  height: 50px;
+  background-color: #a459f4;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  
+}

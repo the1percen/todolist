@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">To Do</h1>
+        <form class="add text-center my-4" method="POST" action="">
+          {% csrf_token %}
+          {{form.title}}
+  
+          <div class="text-center">
+              <button>Sumbit</button>
+          </div>
+        </form>
+      </header>
+      {% for tasks in task %}
+      <ul class="list-group todos mx-auto text-light delete">
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>{{tasks.title}}</span>
+          <a href="{% url "delete" tasks.id%}">
+            <i class="far fa-trash-alt delete"></i>
+          </a>
+          
+        </li>
+        <div class="btn-container">
+          <div class="edit">
+            <a href="{% url "add" tasks.id%}">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </div>
+      {% endfor %}
+      
+    </div>
+
+
+
+
+
+{% endblock content %}
